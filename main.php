@@ -7,13 +7,13 @@
 
 	include("anticaptcha-php/anticaptcha.php");
 	include("anticaptcha-php/nocaptchaproxyless.php");
-	/*$logo=array(
-		base64_decode("X19fX19fICAgICAgICAgICAgICAgICAgICAgIF8gICAgICAgICAgICAgICAgX19fX18gICAgICAgICAgICAgIF8gICAgICAgICAgICAKfCBfX18gXCAgICAgICAgICAgICAgICAgICAgKF8pICAgICAgICAgICAgICAvICBfX198ICAgICAgICAgICAgKF8pICAgICAgICAgICAKfCB8Xy8gLyBfICAgXyAgXyBfXyAgXyBfXyAgIF8gIF8gX18gICAgX18gXyBcIGAtLS4gICBfX18gIF8gX18gIF8gICBfX18gIF9fXyAKfCBfX18gXHwgfCB8IHx8ICdfX3x8ICdfIFwgfCB8fCAnXyBcICAvIF9gIHwgYC0tLiBcIC8gXyBcfCAnX198fCB8IC8gXyBcLyBfX3wKfCB8Xy8gL3wgfF98IHx8IHwgICB8IHwgfCB8fCB8fCB8IHwgfHwgKF98IHwvXF9fLyAvfCAgX18vfCB8ICAgfCB8fCAgX18vXF9fIFwKXF9fX18vICBcX18sX3x8X3wgICB8X3wgfF98fF98fF98IHxffCBcX18sIHxcX19fXy8gIFxfX198fF98ICAgfF98IFxfX198fF9fXy8KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX18vIHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8X19fLyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA="),
-		'LinkFetcher - https://github.com/EvilCorpTM/BurningSeriesLinkFetcher'
+	$logo=array(
+		base64_decode("IF9fX19fX18gICBfXyBfICAgICBfICAgICAgIF8gICAgX19fX18gICAgICAgICAgIF8gICAgIF8gICAgICAgICAgICAgICAKLyAgX19fXCBcIC8gL3wgfCAgIChfKSAgICAgfCB8ICB8ICBfXyBcICAgICAgICAgfCB8ICAgfCB8ICAgICAgICAgICAgICAKXCBgLS0uIFwgViAvIHwgfCAgICBfIF8gX18gfCB8IF98IHwgIFwvXyBfXyBfXyBffCB8X18gfCB8X18gICBfX18gXyBfXyAKIGAtLS4gXC8gICBcIHwgfCAgIHwgfCAnXyBcfCB8LyAvIHwgX198ICdfXy8gX2AgfCAnXyBcfCAnXyBcIC8gXyBcICdfX3wKL1xfXy8gLyAvXlwgXHwgfF9fX3wgfCB8IHwgfCAgIDx8IHxfXCBcIHwgfCAoX3wgfCB8XykgfCB8XykgfCAgX18vIHwgICAKXF9fX18vXC8gICBcL1xfX19fXy9ffF98IHxffF98XF9cXF9fX18vX3wgIFxfXyxffF8uX18vfF8uX18vIFxfX198X3wgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA="),
+		'LinkFetcher - https://github.com/EvilCorpTM/SerienstreamSXLinkFetcher'
 	);
-	echo implode("\n",$logo);*/
+	echo implode("\n",$logo);
 
-	if (sizeof($argv) != 2) die("\n\nPlease Use Following Syntax:\nphp -f main.php \"https://bs.to/serie/Drake-and-Josh/de\"\n\n\n");
+	if (sizeof($argv) != 2) die("\n\nPlease Use Following Syntax:\nphp -f main.php \"https://serienstream.sx/serie/stream/eine-schrecklich-nette-familie/staffel-1\"\n\n\n");
 	$url = $argv[1];
 	@mkdir("dl");
 	function cache_get($pageLink) {
@@ -125,14 +125,9 @@
 				} else {
 					echo "unsuccessfull\n";
 				}
-				//$embed = bsRequest($episodeSUrl, $api->getTaskSolution());
-				//print_r($embed);
-				/*if ($embed->success) {*/
-
 			}
 			continue;
 		}
-/*
-*/
+
 	}
 ?>
